@@ -33,3 +33,21 @@ function sum(num, ...values){
     return num + values[0];
 }
 sum(1, 5,4,3,2);
+
+//ustilando spread operator (...)
+let json1 = {name: "Bigotes",food: "Pollito"};
+let json2 = { age: 12, color: "Blanco"};
+solution(json1, json2);
+function solution(json1, json2) {
+    // Tu código aquí 👈
+    let data = {...json1, ...json2};
+
+    console.log(data);
+   }
+
+function solution2(json1, json2 = { age: 12, color: "Blanco" }) {
+
+    return { ...json1, ...json2 };
+}
+  
+ console.log(solution2({ name: "Bigotes", food: "Pollito" }));
