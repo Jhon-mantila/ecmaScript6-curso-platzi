@@ -11,5 +11,7 @@
     "ecmascript"
   ],
   "author": "Jhon Mantilla <jhon.mantilla@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
+
 }
