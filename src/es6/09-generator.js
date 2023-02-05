@@ -20,16 +20,20 @@ console.log(it.next().value);
 function* getId() {
     // Tu código aquí 👈
     let contador = 0;
+    let codigo;
     while(true){
-        contador++;
-        yield contador;
+        //contador++;
+        codigo = Math.random().toString(36).substring(5).toUpperCase();
+        yield codigo; //contador;
     }
   }
 
 let id = getId();
 let ids = [id.next().value, id.next().value, id.next().value];
+
 console.log(id.next().value);
 console.log(id.next().value);
 console.log(id.next().value);
+
 console.log(ids);
 
